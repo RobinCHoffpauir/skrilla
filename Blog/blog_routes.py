@@ -1,7 +1,7 @@
 from flask import Blueprint
 Bearer = "YOUR_JWT_TOKEN"
 
-from api import db
+from skrilla import db
 from flask import jsonify, request
 from flask_jwt_extended import jwt_required
 blogs= Blueprint('blogs',__name__)
