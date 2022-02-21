@@ -1,11 +1,3 @@
-
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-import click
-from flask.cli import with_appcontext
-from werkzeug.security import generate_password_hash
-db = SQLAlchemy()
-
 def create_app():
     from skrilla.Blog.blog_routes import blogs
     app.register_blueprint(blogs)
